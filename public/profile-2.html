@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/custom-style.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="/css/icons.css" rel="stylesheet" type="text/css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* profile page css */
+        .short-info {
+            display: flex;
+            align-items: unset;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .user-bio {
+            margin-left: 0;
+            margin-top: 15px;
+        }
+
+        .margin-auto {
+            margin: auto;
+        }
+
+        .user-avatar img {
+            width: 150px;
+        }
+
+        .background-transparent {
+            background-color: transparent;
+        }
+
+        .background-white {
+            background-color: #ffffff;
+        }
+
+
+
+        .short-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-avatar img {
+            width: 64px;
+        }
+
+        .user-bio {
+            margin-left: 15px;
+        }
+
+        .user-name {
+            font-size: 16px;
+            color: #494a7f;
+        }
+
+        .user-dept {
+            font-size: 13px;
+            color: #8f8faa;
+            font-weight: 500;
+        }
+
+        .email-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #8f8faa;
+        }
+
+        .email-info span:first-child {
+            font-weight: 600;
+            color: #494a7f;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #8f8faa;
+        }
+
+        .contact-info span:first-child {
+            font-weight: 600;
+            color: #494a7f;
+        }
+
+        #editBio .card-header {
+            background-color: #ffffff;
+        }
+
+        #editBio .card-header h4 {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+            color: #494a7f;
+            line-height: 30px;
+        }
+
+        #editBio .card-header h4 small {
+            font-size: 12px;
+            color: #8f8faa;
+        }
+
+        .profile-edit-form label {
+            font-size: 12px;
+            color: #8f8faa;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-edit-form .input-wraper i {
+            right: 26px;
+        }
+
+        .profile-edit-form form .btn.save-btn {
+            width: 84px;
+            height: 46px;
+            border-radius: 6px;
+            box-shadow: 0 15px 41px -8px rgba(85, 95, 246, 0.32);
+            background: #555ff6;
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+
+        .pl-70 {
+            padding-left: 70px;
+        }
+
+        .input-wraper-with-cc .dropdown {
+            position: absolute;
+        }
+
+        .input-wraper-with-cc .dropdown button {
+            height: 54px;
+            border-right: 1px solid #dde2ee;
+        }
+
+        .input-wraper input {
+            padding-right: 40px;
+        }
+
+        .edit-profile-img-btn {
+            border: 1px solid #dde2ee;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            text-align: center;
+            padding: 2px;
+            background: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.18);
+            position: absolute;
+            left: 80px;
+        }
+
+        .edit-profile-img-btn span::before {
+            color: #555ff6;
+        }
+
+        .input-wraper-avatar img {
+            width: 92px;
+            height: 92px;
+            object-fit: cover;
+        }
+
+        .card .more-btn span {
+            padding: 8px;
+        }
+
+        .profile-card {
+            border: none;
+            box-shadow: 0 4px 24px -12px rgba(0, 0, 0, 0.178);
+        }
+
+        .box-shadow-none {
+            box-shadow: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="background_bg">
+        <!-- Navbar-Start -->
+        <div class="navbar-custom">
+            <div class="logo">
+                <a href="#"> <img src="/static/images/logo.svg" alt="logo"> </a>
+            </div>
+            <ul class="nav-ul">
+                <li>
+                    <a href="#"><i class="icon-home"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-search"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-conversations"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-collections"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-insights"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon-configurations"></i></a>
+                </li>
+            </ul>
+
+            <ul class="nav-btm-ul">
+                <li>
+                    <a href="#"><i class="icon-help"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="notification"> <i class="icon-notifications"></i> <span class="oval"> 12
+                        </span></a>
+                </li>
+                <li class="active">
+                    <div class="sign-out">
+                        <!-- <a href="#"><img src="./static/images/profile@3x.jpg" alt="profile"></a> -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Navbar-End -->
+        <div class="conversation-wrapp minHeight">
+            <div class="custom-row">
+
+                <div class="start-all-conversation">
+
+                    <div class="page-body">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="card profile-card box-shadow-none mb-2" id="bio">
+                                    <div class="more-btn text-right">
+                                        <span><i class="fas fa-ellipsis-v"></i></span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="short-info mb-3">
+                                            <div class="user-avatar">
+                                                <img src="./static/images/daniel.jpg" alt="user-avatar">
+                                            </div>
+                                            <div class="user-bio">
+                                                <h4 class="user-name mb-2">Jason Muller</h4>
+                                                <p class="user-dept">Head of development</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="actionBtns mt-4">
+                                            <button class="btn emptyColorBtn d-block margin-auto">Forgot
+                                                Password</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card profile-card box-shadow-none mb-4" id="logout-btn">
+                                    <div class="card-body">
+                                        <div class="actionBtns">
+                                            <button class="btn emptyColorBtn d-block margin-auto">Logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-8 col-sm-12">
+                                <div class="card profile-card mb-4 background-transparent" id="editBio">
+                                    <div class="card-header profile-card mb-2 ">
+                                        <h4>My Profile <small>Manage your profile</small></h4>
+                                    </div>
+                                    <div class="card-body background-white">
+                                        <div class="profile-edit-form">
+                                            <form>
+                                                <div class="form-group row">
+                                                    <label for="avatar" class="col-md-2 col-form-label">Avatar</label>
+                                                    <div class="input-wraper input-wraper-avatar col-md-10">
+                                                        <img src="./static/images/daniel.jpg" alt="user-img">
+                                                        <button class="btn edit-profile-img-btn"><span
+                                                                class="icon-edit"></span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="firstName" class="col-md-2 col-form-label">First
+                                                        Name</label>
+                                                    <div class="input-wraper col-md-10">
+                                                        <input name="firstName" class="form-control" value="John">
+                                                        <i class="icon-person"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label for="lastName" class="col-md-2 col-form-label">Last
+                                                        Name</label>
+                                                    <div class="input-wraper col-md-10">
+                                                        <input name="lastName" class="form-control" value="Doe">
+                                                        <i class="icon-person"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label for="emailId" class="col-md-2 col-form-label">Email
+                                                        ID</label>
+                                                    <div class="input-wraper col-md-10">
+                                                        <input name="emailId" class="form-control"
+                                                            value="john.doe@scoop.in">
+                                                        <i class="icon-email"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label for="contact" class="col-md-2 col-form-label">Contact
+                                                        Number</label>
+                                                    <div class="input-wraper input-wraper-with-cc col-md-10">
+                                                        <div class="dropdown">
+                                                            <button class="btn dropdown-toggle" type="button"
+                                                                id="countryCode" data-toggle="dropdown"
+                                                                aria-haspopup="true" aria-expanded="false">
+                                                                +1
+                                                            </button>
+                                                            <div class="dropdown-menu" aria-labelledby="countryCode">
+                                                                <a class="dropdown-item" href="#">+91</a>
+                                                                <a class="dropdown-item" href="#">+1</a>
+                                                                <a class="dropdown-item" href="#">+92</a>
+                                                                <a class="dropdown-item" href="#">+91</a>
+                                                                <a class="dropdown-item" href="#">+1</a>
+                                                                <a class="dropdown-item" href="#">+92</a>
+                                                                <a class="dropdown-item" href="#">+91</a>
+                                                                <a class="dropdown-item" href="#">+1</a>
+                                                                <a class="dropdown-item" href="#">+92</a>
+                                                            </div>
+                                                        </div>
+                                                        <input name="contact" class="form-control pl-70"
+                                                            value="98176*****">
+                                                        <i class="icon-phone"></i>
+                                                    </div>
+                                                </div>
+
+                                                <button class="btn save-btn mt30" type="submit">SAVE</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- <script type="text/javascript" src="/js/jquery-3.3.1.slim.min.js">
+</script>
+<script type="text/javascript" src="/js/bootstrap.min.js">
+</script>
+<script type="text/javascript" src="/js/popper.min.js">
+</script> -->
+
+</html>

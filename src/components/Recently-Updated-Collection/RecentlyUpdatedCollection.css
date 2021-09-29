@@ -1,0 +1,172 @@
+/*==============================recent-update-collection-css-Start==============================*/
+.recent-update-collection {
+  width: 100%;
+}
+
+.recent-deatil-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1.5px solid #dde2ee;
+  /*border-bottom:1.5px solid #dde2ee;*/
+  padding: 15px 0px;
+}
+
+.recent-deatil {
+  display: flex;
+}
+
+.conver-oval {
+  width: 24px;
+  height: 24px;
+  background-color: #8e95c2;
+  display: block;
+  border-radius: 50%;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  top: -2px;
+
+}
+
+.recent-deatil-text h5 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #494a7f;
+  word-break: break-all;
+}
+
+.recent-small-text {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #8f8faa;
+}
+
+.recent-small-text strong {
+  font-weight: 600;
+}
+
+.coversation-text {
+  display: inline-block;
+  height: 20px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #8f8faa;
+  position: relative;
+}
+
+.coversation-text:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url(/static/images/chat.svg) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.coversation-add {
+  height: 12px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 12px;
+  letter-spacing: normal;
+  text-align: right;
+  color: #0bd2c7;
+  display: block;
+}
+
+.coversation-minus {
+  height: 12px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 12px;
+  letter-spacing: normal;
+  text-align: right;
+  color: #f34646;
+  display: block;
+}
+
+.see-all {
+  border-top: 1.5px solid #dde2ee;
+  text-align: right;
+  padding: 20px;
+}
+
+.see-all-text {
+  height: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: normal;
+  color: #555ff6;
+}
+
+/*==============================recent-update-collection-css-End==============================*/
+
+.custom-component.recent-update-collection {
+  padding: 0;
+}
+
+.custom-component.recent-update-collection .recent-update-head {
+  padding: 20px;
+}
+
+.recent-update-collection .recent-deatil-row {
+  padding: 15px 20px;
+}
+
+/* additional css */
+
+.recent-deatil-row .recent-deatil {
+  width: 85%;
+}
+
+.recent-deatil-row .recent-coversation {
+  width: 15%;
+  text-align: right;
+}
+
+.recent-deatil-row .recent-deatil .recent-deatil-text {
+  width: 100%;
+}
+
+@media (max-width:1400px) {
+  .recent-deatil-row .recent-deatil {
+    width: 80%;
+  }
+
+  .recent-deatil-row .recent-coversation {
+    width: 20%;
+  }
+}
+
+/* custom scrollbar css */
+.recent-update-body {
+  min-height: 396px;
+}
+
+.recent-update-collection .ScrollbarsCustom {
+  min-height: 396px;
+}

@@ -1,0 +1,28 @@
+.page-title-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #494a7f;
+  line-height: 30px;
+  word-break: break-all;
+}
+
+.page-title-text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #8f8faa;
+}
+
+.fadeuptop{
+  transform: translate(0px, -40px);
+    transition: all 0.25s ease;
+}

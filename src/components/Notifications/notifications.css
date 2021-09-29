@@ -1,0 +1,104 @@
+/* notification css */
+.notification-bar{
+    max-width: 573px;
+    width: 100%;
+    margin-left: 80px;
+    padding: 50px 30px;
+    background: #eff1f5;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    box-shadow: 16px 0 17px 0 rgba(0, 0, 0, 0.05);
+}
+.notification-bar-head{
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+.notification-bar-head h2{
+  font-size: 18px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 0.2px;
+    color: #494a7f;
+}
+.notification-bar-head .mark-all-btn span{
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.2px;
+  color: #555ff6;
+  cursor: pointer;
+}
+.notification-empty{
+  transform: translate(0, 50%);
+}
+#wrapper{
+  position: relative;
+}
+.notification-item{
+  border-radius: 4px;
+    box-shadow: 0 40px 57px -25px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 15px;
+    position: relative;
+}
+.notification-item .n-msg{
+  line-height: 1.71;
+  font-size: 14px;
+  color: #494a7f;
+  margin-bottom: 5px;
+  padding-right: 15px;
+}
+.notification-item .n-msg .bold{
+  font-weight: 500;
+}
+.n-time-ago{
+  display: flex;
+  align-items: center;
+}
+.n-time-ago i{
+  font-size: 16px;
+}
+.n-time-ago .n-ago{
+  font-size: 12px;
+  line-height: 1.67;
+  color: #8f8faa;
+  margin-left: 10px;
+}
+.n-mark{
+  width: 10px;
+  height: 10px;
+  background-color: #555ff6;
+  border-radius: 50%;
+  position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 15px;
+}
+
+.close-notification{
+    position: absolute;
+    right: -20px;
+    top: -40px;
+    cursor: pointer;
+}
+.notification-empty-text{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+   color: #494a7f;
+}
+
+.notification-bar-body {
+  height: 100%;
+}
+
+.notification-body-wrapper {
+  height: calc(100vh - 120px);
+}
+
+.notification-bar.bar-in-search{
+  margin-top: 60px;
+}

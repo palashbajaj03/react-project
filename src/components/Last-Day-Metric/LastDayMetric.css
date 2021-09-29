@@ -1,0 +1,213 @@
+.car-box-row {
+   width: 100%;
+}
+
+.card-box {
+   width: 100%;
+   min-height: 133px;
+   border-radius: 6px;
+   position: relative;
+   overflow: hidden;
+   padding: 25px 20px 15px 20px;
+   transition: 0.3s ease-in-out;
+
+}
+
+.card-box:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.card-box h2 {
+   font-size: 30px;
+   font-weight: bold;
+
+   letter-spacing: 0.2px;
+   color: #ffffff;
+}
+
+.card-box h2 span {
+   font-size: 24px;
+   letter-spacing: normal;
+   color: #ffffff;
+   font-weight: normal;
+}
+
+.card-box h2 span i {
+   display: inline-block;
+   margin-right: 10px;
+
+}
+
+.card-box p {
+   font-size: 14px;
+   font-weight: 600;
+   letter-spacing: 0.2px;
+   color: #ffffff;
+   margin: 10px 0px 5px 0px;
+   position: relative;
+   z-index: 1;
+
+}
+
+.percent-coversation {
+   font-size: 12px;
+   font-weight: 600;
+   ;
+   letter-spacing: 0.2px;
+   color: #ffffff;
+   position: relative;
+   z-index: 1;
+}
+
+.percent-coversation span {
+   font-size: 12px;
+   font-weight: normal;
+   letter-spacing: normal;
+   color: #ffffff;
+}
+
+.apport-icon {
+   position: absolute;
+   right: 0px;
+   bottom: 20px;
+}
+
+.missed-icon {
+   position: absolute;
+   right: 0px;
+   bottom: 0px;
+}
+
+.nagative-icon {
+   position: absolute;
+   right: 0px;
+   bottom: 0px;
+}
+
+.rogue-icon {
+   position: absolute;
+   right: 0px;
+   bottom: 5px;
+}
+
+
+
+.apportunity-box {
+   box-shadow: 0 25px 30px -25px #555ff6;
+   background-color: #555ff6;
+
+}
+
+
+.missed-appor-box {
+   box-shadow: 0 25px 30px -25px #169eca;
+   background-color: #169eca;
+}
+
+.nagative-box {
+   box-shadow: 0 25px 30px -25px #38a7ed;
+   background-color: #38a7ed;
+}
+
+.rogue-box {
+   box-shadow: 0 25px 30px -25px #04d5c9;
+   background-color: #0bd2c7;
+}
+
+.oval-span {
+   width: 70px;
+   height: 70px;
+   opacity: 0.15;
+   border-radius: 50%;
+   background-color: #ffffff;
+   display: block;
+   position: absolute;
+   top: -15px;
+   left: -15px;
+
+}
+
+/* ============= responsive css ========== */
+
+@media (max-width:1024px) {
+   .car-box-row .card-box {
+      min-height: 150px;
+   }
+}
+/* chart in box css*/
+.chart-inside-box{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+.chart-inside-box svg{
+   width: 50%;
+   height: auto;
+   margin-left: auto;
+   height: 100%;
+}
+
+/*chart css*/
+.apportunity-box .highcharts-column-series rect.highcharts-point{
+   fill: #fff;
+   stroke: #3e48ce;
+   fill-opacity: 1
+}
+.card-box{
+   padding-top: 15px;
+}
+.card-box .percent-coversation{
+   margin: 0.5rem 0;
+}
+.card-box h2{
+   font-weight: normal;
+   margin: 0
+}
+.card-box p{
+   margin: 0;
+}
+
+.apportunity-box .highcharts-axis-line{
+   fill: #3e48ce;
+   stroke: #3e48ce;
+}
+.apportunity-box tspan.highcharts-text-outline{
+   stroke-width: 0;
+   fill: #ffffff;
+   font-weight: normal
+}
+.apportunity-box .highcharts-data-label text, .apportunity-box text.highcharts-data-label{
+   stroke-width: 0;
+   fill: #ffffff !important;
+}
+.apportunity-box .highcharts-data-label text tspan{
+   font-weight: normal;
+}
+
+.nagative-box .highcharts-column-series rect.highcharts-point{
+   fill: #fff;
+   stroke: #2478af;
+   fill-opacity: 1
+}
+.nagative-box .highcharts-axis-line{
+   fill: #2478af;
+   stroke: #2478af;
+}
+
+.nagative-box tspan.highcharts-text-outline{
+   stroke-width: 0;
+   fill: #ffffff;
+   font-weight: normal
+}
+.nagative-box .highcharts-data-label text, .apportunity-box text.highcharts-data-label{
+   stroke-width: 0;
+   fill: #ffffff !important;
+}
+.nagative-box .highcharts-data-label text tspan{
+   font-weight: normal;
+}
+
+.space{
+   height: 46px;
+}

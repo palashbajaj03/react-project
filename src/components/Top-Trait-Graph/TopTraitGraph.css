@@ -1,0 +1,17 @@
+/*==============================Top-Trails-css-Start==============================*/
+.top-traits{
+  width: 630px;
+  width: 100%;
+}
+
+.top-traits-header{
+display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.top-traits-chart{
+text-align: center;
+}
+
+
+/*==============================Top-Trails-css-End==============================*/

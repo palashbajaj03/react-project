@@ -1,0 +1,273 @@
+/*==============================Navbar-css-Start==============================*/
+.navbar-custom {
+   width: 80px;
+  height: 100vh;
+  box-shadow: 0 2px 16px 3px #f1f1f1;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0px;
+  left: 0px; 
+  display: flex;
+  flex-wrap: wrap;
+ }
+ 
+ /* .logo{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  text-align: center;
+  line-height: 80px;
+ }
+ 
+ .logo img{
+    width: 42px;
+ } */
+
+ .logo{
+   /* width: 80px;
+   height: 80px; */
+   object-fit: contain;
+   text-align: center;
+   line-height: 80px;
+   position: relative;
+   padding: 15px 25px;
+   width: 100%;
+}
+.logo .small-img{
+ transition: all 0.25s ease;
+}
+.logo .small-img img{
+ width: 48px;
+}
+.logo .long-img img{
+ max-width: 164px;
+ width: 164;
+}
+.logo .long-img{
+ position: absolute;
+   left: -48px;
+   top: 18px;
+   opacity: 0;
+   transition: all 0.25s ease;
+}
+.navbar-custom:hover .logo .small-img{
+ opacity: 0;
+}
+.navbar-custom:hover .logo .long-img{
+ opacity: 1;
+ left: 50%;
+ transform: translate(-50%, 0);
+}
+ 
+ .nav-ul {
+      width: 100%;
+  margin-top: 59px;
+ }
+ 
+ .nav-ul li {
+  text-align: center;
+  padding: 15px 25px;
+ }
+ .nav-ul li.active i:before{
+    color: #555ff6;
+ }
+ .nav-ul li img{
+  width: 30px;
+ }
+ 
+ 
+ .nav-btm-ul {
+  width: 100%;
+  text-align: center;
+  /* position: absolute; */
+  bottom: 0px;
+ }
+ .nav-btm-ul li {
+  padding: 15px 25px;
+ 
+ }
+ .nav-btm-ul li .sign-out{
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+ }
+ .nav-btm-ul li img{
+ width: 100%;
+ }
+ .notification{
+  position: relative;
+ }
+ 
+ .navbar-custom i{
+ font-size: 26px;
+ }
+ 
+ .nav-btm-ul i{
+  font-size: 26px;
+ }
+ .oval {
+   width: 21px;
+   height: 21px;
+   background-color: #555ff6;
+   border-radius: 50%;
+   font-size: 10px;
+   font-weight: 500;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: 21px;
+   letter-spacing: normal;
+   color: #ffffff;
+   position: absolute;
+   top: 4px;
+   left: 36px;
+   justify-content: center;
+   display: flex;
+   z-index: 8;
+ }
+ 
+ .modal-open .navbar-custom {
+  filter: blur(4px);
+ }
+ 
+ 
+ /*==============================Navbar-css-End==============================*/
+ 
+ /* ========== side menu ============*/
+ .navbar-custom{
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+  z-index: 5;
+ }
+ .navbar-custom:hover{
+  width: 270px ;
+  overflow: visible;
+ }
+ .navbar-custom:hover .nav-ul li a span{
+  visibility: visible;
+ }
+ .nav-ul li{
+  text-align: left;
+ }
+ .nav-ul li a{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+ }
+ .nav-ul li a span{
+  margin-left: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #494a7f;
+ }
+ .nav-btm-ul{
+  text-align: left;
+ }
+ .nav-btm-ul li a span.help{
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #494a7f;
+ }
+ 
+ .nav-ul li.active a span{
+  color: #555ff6;
+  font-weight: 600;
+ }
+ .nav-ul li:hover{
+  background: #f4f8ff;
+ }
+ .nav-ul li:hover a span{
+  color: #555ff6;
+  font-weight: 600;
+ }
+ 
+ 
+ 
+ .nav-btm-ul .userImg{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+ }
+ .navbar-custom:hover .nav-btm-ul li a span.userName{
+  visibility: visible;
+ }
+ .nav-btm-ul li{
+  text-align: left;
+ }
+ .nav-btm-ul li a{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+ }
+ .nav-btm-ul li a span.userName{
+  margin-left: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #494a7f;
+  width: 160px;
+  white-space: nowrap;
+ }
+ .nav-btm-ul{
+  text-align: left;
+ }
+ .nav-btm-ul li.active a span.userName{
+  color: #555ff6;
+  font-weight: 600;
+ }
+ .nav-btm-ul li:hover{
+  background: #f4f8ff;
+ }
+ .nav-btm-ul li:hover a span.userName{
+  color: #555ff6;
+  font-weight: 600;
+ }
+ 
+ 
+ .active-user-img.as-img.profileImg{
+  overflow: visible;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+ }
+ .active-user-img.as-img.profileImg .initials-logo{
+  font-size: 12px;
+ }
+ .nav-btm-ul li a span.userName{
+  margin-left: 67px;
+ }
+ 
+ .navbar-custom ul li a small{
+    font-size: 100%;
+ }
+ 
+ .nav-btm-ul li a span.configure{
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #494a7f;
+ }
+
+ .getSmall {
+   width: 80px !important;
+ }
+
+ .notification-li{
+    position: relative;
+ }

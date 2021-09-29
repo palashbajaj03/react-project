@@ -1,0 +1,519 @@
+/* <====== Pagination CSS ======> */
+.rc-pagination {
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+}
+
+.rc-pagination>li {
+  list-style: none;
+}
+
+.rc-pagination-total-text {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+
+.rc-pagination:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.rc-pagination-item {
+  cursor: pointer;
+  min-width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  list-style: none;
+  float: left;
+  background-color: #fff;
+  margin-right: 8px;
+  font-weight: 600;
+  color: #8f8faa;
+}
+
+.rc-pagination-item-disabled {
+  /* cursor: not-allowed; */
+}
+
+.rc-pagination-item-disabled:hover {
+  border-color: #d9d9d9;
+}
+
+.rc-pagination-item-disabled:hover a {
+  color: #d9d9d9;
+}
+
+.rc-pagination-item-active {
+  color: #555ff6;
+  border-bottom: 2px solid #555ff6;
+}
+
+.rc-pagination-jump-prev:after,
+.rc-pagination-jump-next:after {
+  content: "••••";
+  display: block;
+  letter-spacing: 2px;
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 1px;
+  position: absolute;
+  top: 10px;
+  left: 3px;
+}
+
+.rc-pagination-prev,
+.rc-pagination-jump-prev,
+.rc-pagination-jump-next {
+  margin-right: 8px;
+}
+
+.rc-pagination-prev,
+.rc-pagination-next,
+.rc-pagination-jump-prev,
+.rc-pagination-jump-next {
+  cursor: pointer;
+  color: #666;
+  font-size: 10px;
+  list-style: none;
+  min-width: 28px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+  text-align: center;
+}
+
+.rc-pagination-prev a:after {
+  content: "‹";
+  display: block;
+  opacity: 0;
+}
+
+.rc-pagination-prev a::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(/static/images/arrow-lhs.svg);
+  background-size: 16px;
+}
+
+.rc-pagination-next a:after {
+  content: "›";
+  display: block;
+  opacity: 0;
+}
+
+.rc-pagination-next a::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(/static/images/arrow-rhs.svg);
+  background-size: 16px;
+}
+
+.rc-pagination-prev,
+.rc-pagination-next {
+  font-size: 18px;
+}
+
+.rc-pagination-prev a,
+.rc-pagination-next a {
+  color: #666;
+}
+
+.rc-pagination-prev a:after,
+.rc-pagination-next a:after {
+  margin-top: -1px;
+}
+
+.rc-pagination-disabled a:hover{
+  /* cursor: not-allowed; */
+  border-bottom: white
+}
+
+.rc-pagination-disabled .rc-pagination-item,
+.rc-pagination-disabled .rc-pagination-prev,
+.rc-pagination-disabled .rc-pagination-next {
+  /* cursor: not-allowed; */
+}
+
+.rc-pagination-disabled .rc-pagination-item:hover,
+.rc-pagination-disabled .rc-pagination-prev:hover,
+.rc-pagination-disabled .rc-pagination-next:hover {
+  border-color: #d9d9d9;
+}
+
+.rc-pagination-disabled .rc-pagination-item:hover a,
+.rc-pagination-disabled .rc-pagination-prev:hover a,
+.rc-pagination-disabled .rc-pagination-next:hover a {
+  color: #d9d9d9;
+}
+
+.rc-pagination-disabled .rc-pagination-jump-prev,
+.rc-pagination-disabled .rc-pagination-jump-next {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .rc-pagination-item-after-jump-prev,
+  .rc-pagination-item-before-jump-next {
+     display: none;
+  }
+}
+
+.pagination {
+ height: 40px;
+ display: flex;
+ align-items: center;
+ border-radius: 6px;
+ box-shadow: 0 40px 57px -25px rgba(0, 0, 0, 0.1);
+ background-color: #ffffff;
+ padding: .375rem .75rem;
+}
+
+.pagination ul li {
+ display: inline-block;
+ float: left;
+ height: 40px;
+ position: relative;
+}
+
+.pagination ul li a {
+ display: flex;
+ margin: 0 10px;
+ font-size: 14px;
+ font-weight: 500;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: 1;
+ letter-spacing: normal;
+ color: #8f8faa;
+ height: 40px;
+ align-items: center;
+}
+
+.pagination ul li.active a {
+ color: #555ff6;
+ border-bottom: 1px solid #555ff6;
+}
+
+.pagination ul li:hover a {
+ color: #555ff6 !important;
+
+}
+
+.pagination ul li:hover {
+ border-bottom: 1px solid #555ff6;
+}
+
+.pagination a i {
+ font-size: 13px;
+}
+
+.pagination a img {
+ width: 13px;
+ height: 13px;
+}
+
+/* Pagination CSS end */
+
+.searchBox {
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.side-text {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: inherit;
+  letter-spacing: normal;
+  color: #8f8faa;
+}
+
+.searchBox input {
+  border-radius: 5px;
+  border: solid 1px #dde2ee;
+  background-color: #ffffff;
+  position: relative;
+  font-size: 12px;
+  height: 40px;
+  color: #8f8faa;
+  padding-right: 30px;
+}
+
+.searchBox .searchIcon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+
+.media-name-box i {
+  font-size: 20px;
+}
+
+.subText {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.subText i {
+  padding-right: 10px;
+}
+
+.subText .side-text {
+  padding-left: 10px;
+  border-left: 1px solid #8f8faa;
+}
+
+.start-conversation-row::before {
+  content: "";
+  width: 1.5px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.start-conversation-row.color-1::before {
+ background: #f34646;
+}
+
+.start-conversation-row.color-2::before {
+ background: #fdbb4e;
+}
+
+.start-conversation-row.color-3::before {
+ background: #0bd2c7;
+}
+
+/*==============================All-Start-Conversation-css-Start==============================*/
+
+.start-all-conversation {
+  width: 100%;
+  padding: 25px 40px 25px 30px;
+}
+
+.show-conversation-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width:1240px){
+  .show-conversation-row{
+    flex-wrap: wrap;
+  }
+  .show-conversation-row .dropdown{
+    margin-bottom: 16px;
+  }
+}
+
+.start-conversation-row {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 20px 35px -25px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+
+}
+
+.small-text {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: normal;
+  color: #8f8faa;
+}
+
+.start-conversation-row {
+  padding: 35px 25px 35px 25px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inner-convers-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conver-profile {
+  display: flex;
+  align-items: center;
+}
+.conver-profile .active-user-img{
+  flex-shrink: 0;
+}
+.conver-profile .media-name-box{
+  width: 100%;
+  overflow: hidden;
+}
+.media-img.imgResize {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.media-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #494a7f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.call-time {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #494a7f;
+}
+
+
+.icons-group {
+  text-align: right;
+}
+
+.icons-group li {
+  font-size: 20px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.icons-group li:last-child {
+  margin-right: 0px;
+}
+
+.search-opportunity {
+  width: 92px;
+  height: 20px;
+  border-radius: 6px 0px;
+  background-color: #555ff6;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+
+
+/*==============================All-Start-Conversation-css-End==============================*/
+
+/*==============================Morph CSS Start==============================*/
+
+.Morph-search .filter-wrap{
+  margin-left: 0;
+}
+.Morph-search .search-wrapp{
+  margin-left: 320px;
+}
+.custom-row{
+  overflow: hidden;
+}
+/* .Morph-search{
+  transition: all 0.5s ease-in-out;
+  animation-name: show;
+  animation-duration: 2s;
+}
+@keyframes show{
+  from { transform: translate(100%,-100%); }
+  to { transform: translate(0,0); }
+} */
+/*==============================Morph CSS End==============================*/
+
+.starActive::before{
+  color: #555ff6;
+}
+
+#bookMarkConversation .modal-title{
+  margin-bottom: 0;
+}
+#bookMarkConversation .modal-body{
+  padding: 1rem 0;
+    margin-bottom: 20px;
+}
+#bookMarkConversation .custom-dropdown{
+  width: 100%;
+  max-width: 100%;
+  height: 54px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 25px;
+}
+#bookMarkConversation .dropdown-menu{
+  width: 100%;
+}
+#bookMarkConversation .virtualBox{
+  width:15px;
+  height:15px;
+}
+#bookMarkConversation .virtualBox::after{
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#bookMarkConversation .checkboxContainer input {
+  width: 100%;
+}
+#bookMarkConversation .dropDownText {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #494a7f;
+}
+#bookMarkConversation .setHeight {
+  height: 15px;
+}
+#bookMarkConversation .checkBoxText {
+  position: absolute;
+  left: 30px;
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding-right: 25px;
+}
+#bookMarkConversation .dropdown .dropdown-menu {
+  padding: 15px;
+  width: 100%;
+  margin-top: 0;
+}

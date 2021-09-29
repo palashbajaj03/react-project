@@ -1,0 +1,82 @@
+/*==============================most-discus-topic-css-start==============================*/
+.most-discus-topic {
+    min-height: 614px;
+}
+
+.most-discus-ul {
+    width: 100%;
+    /* max-height: 190px; */
+    /* overflow-y: scroll; */
+}
+
+.most-discus-ul li h5 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #494a7f;
+}
+
+.most-discus-ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dde2ee;
+}
+
+.most-discus-ul a:last-child li {
+    border-bottom: 0px;
+}
+
+.ring {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.track-vertical {
+    position: absolute;
+    width: 2px;
+    right: 2px;
+    bottom: 2px;
+    top: 2px;
+    border-radius: 1px;
+}
+
+.thumb-horizontal {
+    position: relative;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: inherit;
+    background-color: #8e95c2;;
+    height: 130px;
+    transform: translateY(0px);
+}
+
+
+/*==============================most-discus-topic-css-end==============================*/
+
+.custom-component.most-discus-topic{
+    padding: 0;
+
+}
+.custom-component.most-discus-topic .most-discus-topic-head{
+    padding: 20px 20px 10px 20px;
+}
+.custom-component.most-discus-topic .most-discus-topic-body{
+    padding: 0 20px 20px;
+}
+
+/* ============= responsive css ========== */
+
+@media (max-width:1024px){
+    .most-discus-topic{
+        min-height: 642px;
+    }
+}
+
+.custom-component.most-discus-topic .ScrollbarsCustom {
+    min-height: 500px;
+}
